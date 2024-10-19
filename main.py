@@ -10,13 +10,13 @@ driver = webdriver.Chrome()
 driver.get("https://account.booking.com/sign-in?op_token=EgVvYXV0aCL6AgoUdk8xS2Jsazd4WDl0VW4yY3BaTFMSCWF1dGhvcml6ZRo1aHR0cHM6Ly9zZWN1cmUuYm9va2luZy5jb20vbG9naW4uaHRtbD9vcD1vYXV0aF9yZXR1cm4qmQJVck1CWEFzSlM0cVVFMVRCd1dSZTNUd2d3Unp3SVVDLUhkMGZ4ZC1ZV1V0LWItTkp5Z183bHE3RDlPUDJEZ1lKaXdFSG5NTUk1LXBaS29BZ1QyZmlXX2FjWGZwNjNpeVhuNk0weUUtVjlrZHhHNXpyVUVxVy10NFpqQ1ZsbGpGTzUxbVRZUVUzeVM0U1RDbm91OFh6Ny0zSzlhTkl4UnZZV3FjbVhqenVZRW9ZbEZVVUlzSXVkMjF5NlZzZUtSaWs5Y19VeEJBTmt3OERGNEl6VFdGbDRDYW5LcERydS1VUGx3UnZYSTRNSmU0OXZRaWhtSGM9KmV5SnBaQ0k2SW5SeVlYWmxiR3hsY2w5b1pXRmtaWElpZlE9PUIEY29kZSoxCI7IEjD5ubbx85EnOgBCAFjqreW0BpIBEHRyYXZlbGxlcl9oZWFkZXKaAQVpbmRleA")
 
 # Wait for the username field to be visible and enter the email
-WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.NAME, "username"))).send_keys("sahil312003@gmail.com")
+WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.NAME, "username"))).send_keys("enter your email id")
 
 # Click on the next button
 driver.find_element(By.XPATH, '//*[@id="root"]/div/div/div[2]/div[1]/div/div/div/div/div/div/div/form/div[2]/div[2]/button/span').click()
 
 # Wait for the password field to be visible and enter the password
-WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.NAME, "password"))).send_keys("S@hil312003")
+WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.NAME, "password"))).send_keys("enter your password")
 
 # Click on the login button
 driver.find_element(By.XPATH, '//*[@id="root"]/div/div/div[2]/div[1]/div/div/div/div/div/div/div/form/div/div[2]/div/button/span').click()
